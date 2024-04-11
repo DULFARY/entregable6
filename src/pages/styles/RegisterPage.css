@@ -1,0 +1,106 @@
+.container_register{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.title_register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2em; color: rgb(224, 15, 15) ;
+    border-bottom:  1px solid black;
+    margin-bottom: 0.5em;
+    padding-bottom: 1em;
+
+
+    
+    
+
+}
+
+.for_register{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid rgb(36, 32, 32);
+    align-items: center; 
+    margin-top: 5em;
+    max-width: 370px;
+    padding-bottom: 3em;
+}
+
+.name_register{
+    display: flex;
+    
+}
+
+.input_register{
+    margin-top: 0.2em;
+    width: 14em;
+}
+
+.last_register{
+    display: flex;
+    
+}
+
+.input_last{
+    margin-top: 0.2em;
+    width: 14em;
+
+}
+
+.email_register{
+    display: flex;
+}
+
+.input_email{
+    margin-top: 0.2em;
+
+    
+
+}
+
+.name_passwor{
+    display: flex;
+
+}
+
+.input_paswor{
+    margin-top: 0.2em;
+    width: 14em;
+}
+
+.gender_register{
+    display: flex;
+    
+}
+
+
+.input_gender{
+    display: flex;
+    width: 14em;
+    margin-top: 0.2em;
+
+}
+
+.button_register{
+    display: flex;
+    margin-top: 1.6em;
+    width: 100%;
+    background-color: red;
+    max-width: 85%;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    color: white;
+
+
+
+}

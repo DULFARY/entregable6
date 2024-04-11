@@ -1,0 +1,39 @@
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.em 3em;
+    background-color: black;
+     color: white; 
+    font-size: 1.2em;
+}
+
+.hotels_app{
+      color: white;  
+
+}
+
+
+.header_list{
+    display: flex;
+    gap: 2.2em; 
+    
+}
+
+.header_reservation{
+    
+     color: white; 
+    
+}
+
+.principal_register{
+    color: white;
+
+}
+
+
+
+.header_login{
+    color: white; 
+}
+

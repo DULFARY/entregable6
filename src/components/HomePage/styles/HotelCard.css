@@ -1,0 +1,45 @@
+.card__container{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+     margin-bottom: 4em;
+     border: 2px solid whitesmoke; 
+     max-width: 280px;
+     border-radius: 0.8em; 
+     overflow: hidden;
+     transition: transforme 150ms ease;
+     &:hover{
+         transform: scale(1.05);
+     }
+    
+
+     
+
+}
+
+.card__hoteles{
+    width: 100%;
+    max-width: 280px;
+    border-radius:0.8em;
+    overflow: hidden;
+    
+   
+}
+
+.card__imagen{
+    width: 100%;
+    max-width: 280px;
+    margin: 0px;
+
+}
+
+.boton_card{
+    border-radius: 3em;
+    color: white;
+    background-color: red;
+    border: 0px;
+    cursor: pointer;
+    
+
+}
+

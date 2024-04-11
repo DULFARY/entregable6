@@ -1,0 +1,33 @@
+.container_card{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+
+
+.home_filter{
+    /* margin-left: 4.2em; */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 14em;
+    
+
+    
+
+}
+
+.input_info{
+    justify-content: center;
+    align-items: center;
+     margin-left: 20em; 
+    position: absolute;
+    border: 0px solid rgb(241, 230, 230) 
+    
+    
+    
+}
+

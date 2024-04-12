@@ -4,7 +4,7 @@ import useFetch from '../hooks/useFetch'
 import { Overlay,Map } from 'pigeon-maps'
 import OtherHotels from '../components/OtherHotels/OtherHotels'
 import FormReserve from '../components/HomePage/FormReserve'
-
+import SliderImgs from '../components/shared/SliderImgs'
 
 
 const HotelsldPage = () => {
@@ -12,7 +12,7 @@ const HotelsldPage = () => {
    const {id} = useParams()
 
    const url =`https://hotels-api.academlo.tech/hotels/${id}`
-    const [hotel, getHotel] = useFetch(url)
+    const [hotel, getHotel] = useFetch(url);
 
    useEffect(() => {
     getHotel()
@@ -23,9 +23,9 @@ const HotelsldPage = () => {
     <div>
     <h2>{hotel?.name}</h2>
     <h3>RATING - {hotel?.rating}</h3>
-    <div className="slider">
-      <img src={hotel?.images[0].url} alt=""/>
-      </div>
+    <SliderImgs
+       hotel={hotel}
+    /> 
       <div>
 
       {hotel && (
@@ -34,7 +34,8 @@ const HotelsldPage = () => {
       defaultCenter={[+hotel?.lat, +hotel?.lon]} 
       Zoom={15} 
       maxZoom={16}
-      minZoom={10}>
+      minZoom={10}
+      >
 
         <Overlay anchor={[+hotel?.lat, +hotel?.lon]} offset={[20, 20]}>
           <img src="/imghotel.png" width= {40}alt="" />

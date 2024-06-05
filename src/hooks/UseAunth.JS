@@ -10,7 +10,7 @@ const UseAunth = () => {
 
     //register
     const registerUser = (data) => {
-        const url = 'https://hotels-api.academlo.tech/users'
+        const url = 'https://entreg6-backend-hotel.onrender.com/users'
         axios.post(url, data)
         .then(res => {
             console.log(res.data)
@@ -22,7 +22,7 @@ const UseAunth = () => {
     //login
 
     const loginUser = (data) =>{
-        const url = 'https://hotels-api.academlo.tech/users/login'
+        const url = 'https://entreg6-backend-hotel.onrender.com/users/login'
         axios.post(url, data)
         .then(res =>{
             localStorage.setItem('token', res.data.token)

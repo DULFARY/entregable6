@@ -12,7 +12,7 @@ const FormReviews = ({reserveSelected, setReserveSelected}) => {
   const [,, createReview] = useCrud()
 
   const submit = data => {
-    const url = 'https://hotels-api.academlo.tech/reviews'
+    const url = 'https://entreg6-backend-hotel.onrender.com/reviews'
     data.hotelId = reserveSelected?.hotel.id  
     data.rating= +data.rating
     createReview(url,data)

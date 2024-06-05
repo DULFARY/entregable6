@@ -6,7 +6,7 @@ import {useDispatch} from 'react-redux'
 
 const CategoryFilter = () => {
 
-    const url= 'https://hotels-api.academlo.tech/cities'
+    const url= 'https://entreg6-backend-hotel.onrender.com/cities'
      const [cities, getCities] = useFetch(url);
 
    useEffect (() =>{
@@ -21,9 +21,9 @@ const CategoryFilter = () => {
 
 
     if (id) {
-        url =`https://hotels-api.academlo.tech/hotels?cityId=${id}`;
+        url =`https://entreg6-backend-hotel.onrender.com/hotels?cityId=${id}`;
     } else{
-        url = 'https://hotels-api.academlo.tech/hotels';
+        url = 'https://entreg6-backend-hotel.onrender.com/hotels';
     }
      dispatch (getHotelsThunk(url));
    };

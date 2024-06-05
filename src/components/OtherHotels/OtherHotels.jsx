@@ -3,7 +3,7 @@ import useFetch from '../../hooks/useFetch'
 import HotelCard from '../HomePage/HotelCard'
 
 const OtherHotels = ({hotel}) => {
- const url = `https://hotels-api.academlo.tech/hotels?cityId=${hotel?.cityId}`
+ const url = `https://entreg6-backend-hotel.onrender.com/hotels?cityId=${hotel?.cityId}`
  const [ hotelsInCity, getHotelInCity] = useFetch(url)
 
   useEffect(() => {
